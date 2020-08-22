@@ -1,50 +1,101 @@
 <!DOCTYPE html>
+
 <head>
-    
+    <title>Speech Extraction</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <main>
         <div class="heading">
-            <h2>Voice Extraction with Deep Learning</h2>
+            <h1>Speech Extraction with Deep Learning</h1>
         </div>
         <div class="content">
-            <h3>About</h3>
-            <p>Read more about what this is on <a href="TODO">TODO:add link</a></p>
-        </div>
-        <div class="results">
-            <h3>Results</h3>
-            <div class="audio_files">
-                <div class="res-row">
-                    <audio controls>
-                        <source src="res/input/input1.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="res/output/output1.wav">
-                    </audio>
-                </div>
-                <div class="res-row">
-                    <audio controls>
-                        <source src="res/input/input2.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="res/output/output2.wav">
-                    </audio>
-                </div>
-                <div class="res-row">
-                    <audio controls>
-                        <source src="res/input/input3.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="res/output/output3.wav">
-                    </audio>
-                </div>
-                <div class="res-row">
-                    <audio controls>
-                        <source src="res/input/input4.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="res/output/output4.wav">
-                    </audio>
+            <div>
+
+                <h2>About</h2>
+                <p>
+                    Read more about what this is on
+                    <a href="https://github.com/anirudhs001/SpeachExtractor" target="_blank" rel="noopener noreferrer">
+                        https://github.com/anirudhs001/SpeachExtractor
+                    </a>
+                </p>
+                <p>
+                    <strong>NOTE</strong>: This is just an implementation of <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/1810.04826">this paper</a>.
+                    I did not come up with this.
+                </p>
+            </div>
+            <div class="results">
+                <h2>Results</h2>
+                <div class="audio_files">
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/1.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/1.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/2.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/2.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/4.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/4.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/5.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/5.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/6.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/6.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/7.mp3">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/7.wav">
+                        </audio>
+                    </div>
+                    <p class="note">
+                        Experimenting with other languages(and accents).<br>
+                        Apparently it does not work(proabably because the training dataset was entirely
+                        indic speech).
+                    </p>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/8.wav">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/8.wav">
+                        </audio>
+                    </div>
+                    <div class="row">
+                        <audio controls>
+                            <source src="res/input/9.wav">
+                        </audio>
+                        <audio controls class="output">
+                            <source src="res/output/9.wav">
+                        </audio>
+                    </div>
                 </div>
             </div>
         </div>

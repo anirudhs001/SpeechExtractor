@@ -2,7 +2,7 @@
 # Speaker Extraction
 Using Deep Learning to extract just the Primary speaker from a noisy audio file containing noise, music or even secondary speakers.  
 ## About
-An implementation of [this](https://arxiv.org/abs/1810.04826) paper by good folks at
+An implementation in PyTorch of [this](https://arxiv.org/abs/1810.04826) paper by good folks at
 Google. I made some changes after weeks of trial and error, and am presenting
 the results here.    
 ***Note***: Thanks to [this awesome github repo](https://github.com/mindslab-ai/voicefilter),
