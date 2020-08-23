@@ -19,7 +19,7 @@ files from the original were selected and the noise extracted from them(noise in
 noises). These were then randomly padded to ensure the sounds don't unintentionally remain in 
 the beginning or the ending. Finally these were randomly mixed to prepare a 10000 sample dataset.  
 **Reason**: This is different from what the paper mentions, since their goal was a
-bit differentm(which was to extract a single speaker from a mixture of two speakers, with the embeddings
+bit different(which was to extract a single speaker from a mixture of two speakers, with the embeddings
 given). 
 
 <div align="center">
