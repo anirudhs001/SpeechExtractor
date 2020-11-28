@@ -3,10 +3,10 @@
 Using Deep Learning to extract just the Primary speaker from a noisy audio file containing random noise, music or even secondary speakers.  
 ## About
 An implementation in PyTorch of [this](https://arxiv.org/abs/1810.04826) paper by good folks at
-Google. I made some changes after weeks of trial and error, and am presenting
+Google. We made some changes after weeks of trial and error, and present
 the results here.    
 ***Note***: Thanks to [this awesome github repo](https://github.com/mindslab-ai/voicefilter),
-I was able to figure out how to work with audio.  
+We were able to figure out how to work with audio.  
 
 ## Results
 Sadly, github markdown doesn't allow showing audio directly. Checkout [http://anirudhs001.github.io/SpeechExtractor](http://anirudhs001.github.io/SpeechExtractor) to view the results or
@@ -29,9 +29,9 @@ given).
 </div>
 
 ### Model Architecture
-Since the motive was to reduce the noise irrespective of the speaker, I've ditched the Embedder mentioned
+Since the motive was to reduce the noise irrespective of the speaker, we've ditched the Embedder mentioned
 in the paper. Even without the target speaker's embeddings, the Model works fairly well.   
-**Reason**: This maybe due to the randomisation in the data preparation step, or just dumb luck.  
+**Reason**: This maybe due to the randomisation in the data preparation step.
 
 <div align="center">
     <img src="./res/images/InformationFlow.png" alt="Information Flow to Model" width=800>
@@ -41,7 +41,7 @@ in the paper. Even without the target speaker's embeddings, the Model works fair
 
 The Extractor is the same model as mentioned in the paper: 6 CNNs, a bilinear LSTM, and 2 Fully connected
 Layers. The output is a mask tensor which is applied on the original audio file to get the filtered
-audio. I tried to add more convolutional layers and residual-connections in between those, but the
+audio. We tried to add more convolutional layers and residual-connections in between those, but the
 vanilla network seemed to perform better anyways(No Losses to back me up here :P).  
 **Reason**: This can be due to the residual connections themselves: since we directly add the input of
 the previous layer to output of the next layer, we are essentially passing the noisy audio as it is along
