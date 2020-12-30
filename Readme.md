@@ -1,5 +1,5 @@
 
-# Speaker Extraction
+# Noise cancellation with Deep learning
 Using Deep Learning to extract just the Primary speaker from a noisy audio file containing random noise, music or even secondary speakers.  
 ## About
 An implementation in PyTorch of [this](https://arxiv.org/abs/1810.04826) paper by good folks at
