@@ -11,7 +11,7 @@ We were able to figure out how to work with audio.
 ## Results
 Sadly, github markdown doesn't allow showing audio directly. Checkout [http://anirudhs001.github.io/SpeechExtractor](http://anirudhs001.github.io/SpeechExtractor) to view the results or
 download the files directly from `res/input` and `res/output`. 
-
+Checkout the code at [https://github.com/anirudhs001/GridSoftware/](https://github.com/anirudhs001/GridSoftware/).
 ## Setup
 ### Data preparation  
 From a corpus of ~700 files, ~400 were manually selected and the noise was removed using audacity. Then, ~200
